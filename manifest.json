@@ -1,0 +1,27 @@
+{
+    "browser_action": {
+        "default_title": "Cebu Pacific Explorer"
+    },
+
+    "manifest_version": 2,
+    "name": "Cebu Pacific Explorer",
+    "version": "0.1",
+
+    "description": "Returns the prices of flights sorted by the lowest price for Cebu Pacific.",
+    "homepage_url": "https://github.com/khepriq/cebupacificexplorer",
+    
+    "applications": {
+        "gecko": {
+            "strict_min_version": "55",
+            "id": "edbertkentarana@protonmail.com"
+        }
+    },
+
+    "permissions": [
+        "tabs"
+    ],
+    
+    "background": {
+        "scripts": ["background.js"]
+    }
+  }

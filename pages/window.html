@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="../node_modules/pretty-checkbox/dist/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="../css/template.css">
+
+    <title>Find Flight</title>
+  </head>
+  
+  <body>
+    <main role="main" class="container-fluid">
+        <div class="card">
+            <h3 class="card-header">Philippines Flight Meal</h3>
+            
+            <div class="card-body">
+                <p class="lead">
+                    Find the lowest price for your flights now!
+                </p>
+                <div class="alert alert-warning" role="alert">
+                    Only philippine airlines.
+                </div>
+                
+                <form>
+                    <div class="form-group" id="flight-option">
+                        <div class="pretty p-default p-round p-smooth p-plain">
+                            <input type="radio" name="optionRadio" checked>
+                            <div class="state p-primary-o">
+                                <label>Round-trip</label>
+                            </div>
+                        </div>
+                    
+                        <div class="pretty p-default p-round p-smooth p-plain">
+                            <input type="radio" name="optionRadio">
+                            <div class="state p-primary-o">
+                                <label>One-way</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="fromSelect">From</label>
+                        <select class="selectpicker form-control" id="fromSelect" data-live-search="true">
+                            <option value="" selected disabled>From</option>
+                            <optgroup label="Australia">
+                                <option>Sydney</option>
+                            </optgroup>
+                            <optgroup label="Philippines">
+                                <option value="BCD">Bacolod</option>
+                                <option data-tokens="Tagbilaran Bohol">Bohol</option>
+                                <option data-tokens="Caticlan Boracay">Boracay</option>
+                                <option>Butuan</option>
+                                <option>Cagayan de Oro</option>
+                                <option>Calbayog</option>
+                                <option>Manila</option>
+                            </optgroup>
+                        </select> 
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="toSelect">To</label>
+                        <select class="selectpicker form-control" id="toSelect" data-live-search="true">
+                            <option value="" selected disabled>To</option>
+                            <optgroup label="Australia">
+                                <option>Sydney</option>
+                            </optgroup>
+                            <optgroup label="Philippines">
+                                <option value="BCD">Bacolod</option>
+                                <option data-tokens="Tagbilaran Bohol">Bohol</option>
+                                <option data-tokens="Caticlan Boracay">Boracay</option>
+                                <option>Butuan</option>
+                                <option>Cagayan de Oro</option>
+                                <option>Calbayog</option>
+                                <option>Manila</option>
+                            </optgroup>
+                        </select> 
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="departureInput">Departure</label>
+                        <input class="datepicker form-control" id="departureInput" placeholder="Departure" data-provide="datepicker">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="returnInput">Return</label>
+                        <input class="datepicker form-control" id="returnInput" placeholder="Return" data-provide="datepicker">
+                    </div>
+                </form>
+            </div>             
+        </div>
+    </main>
+    
+    <script src="../node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="../scripts/startup.js"></script>
+  </body>
+</html>
